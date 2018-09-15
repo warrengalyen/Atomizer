@@ -7,22 +7,23 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="static/index.css">
         <script>
+            function loadXYZ() {
+                if($('#idinputbox').val() != ""){
+                    $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz');
+                }
+            }
             $(document).ready(function() {
                 $('#submitname').click(function() {
-                    if($('#idinputbox').val() != "") {
-                        $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz');
-                    }
+                    loadXYZ();
                 });
                 $('#idinputbox').on('keydown', function (e) {
-                if (e.which == 13) {
-                    if($('#idinputbox').val() != "") {
-        	            $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz');
-	                }
-	                return false;
-                 }
+                    if (e.which == 13) {
+                        loadXYZ();
+                        return false;
+                    }
+                });
             });
-            });
-            </script>
+        </script>
     </head>
 
     <body>
