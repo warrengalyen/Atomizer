@@ -7,6 +7,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="static/index.css">
         <script>
+            function hideSecureErrors() {
+                if (document.getElementById("error-text").innerText.includes("5209")) {
+                    document.getElementById("error").style.display = "none";
+                }
+            }
             function loadXYZ() {
                 if($('#idinputbox').val() != ""){
                     $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz');
@@ -43,6 +48,7 @@
             });
             }
             $(document).ready(function() {
+                hideSecureErrors();
                 $('#submitname').click(function() {
                     loadXYZ();
                 });
@@ -52,6 +58,7 @@
                         return false;
                     }
                 });
+                setInterval(hideSecureErrors, 1000);
             });
         </script>
     </head>
@@ -92,9 +99,9 @@
 
                 <button id="xyz-button">Load</button><br><br>
 
-                <h2>About:</h2>
+                <h2>About Structure:</h2>
 
-                <p id="div_text"></p>
+                <p id="div_text">No compound selected</p>
 
             </div>
 
