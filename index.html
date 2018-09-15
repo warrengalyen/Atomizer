@@ -87,30 +87,28 @@
 
             <div id="controls-structure">
 
-                <h2>Samples</h2>
+                <h2 style="margin-top:auto">Samples</h2>
 
                 <select id="controls-sample"></select>
 
+                <h2>Search</h2>
+                
+                <input type="text" id="idinputbox" placeholder="Structure Identifier">
                 <button id="submitname">Search</button><br>
 		        xyz file data from <a href="https://cactus.nci.nih.gov/" target="_blank">cactus.nci.nih.gov</a>
-
-                <input type="text" id="idinputbox" placeholder="Structure Identifier">
-                <button id="submitname">Search</button>
-
+                
                 <h2>Custom</h2>
 
-                Paste xyz file data:<br>
+                xyz file data:<br>
 
                 <textarea id="xyz-data" rows="4" columns="10"></textarea><br><br>
 
-                <button id="xyz-button">Load</button><br><br>
+                <button id="xyz-button">Load</button>
 
                 <h2>About Structure:</h2>
 
                 <p id="div_text">No compound selected</p>
-
                 Info from <a id="wikipedialink" href="https://www.wikiwand.com/en/Wikipedia" target="_blank">Wikipedia</a>
-
             </div>
 
             <div id="controls-render">
@@ -305,7 +303,7 @@
 
         <div id="ao-indicator"></div>
 
-        <div id="error" style="display:none;background:#37474f !important;"">
+        <div id="error" style="display:none;background:#37474f !important;">
             <div id="error-text"></div>
             <br>
             <button id="close-error">Continue</button>

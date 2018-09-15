@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"../node_modules/jquery/dist/jquery.js":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/home/warren/Dropbox/src/atomizer/node_modules/jquery/dist/jquery.js":[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.3
  * http://jquery.com/
@@ -9205,7 +9205,7 @@ return jQuery;
 
 }));
 
-},{}],"../node_modules/keyboardjs/keyboard.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/node_modules/keyboardjs/keyboard.js":[function(require,module,exports){
 /**
  * Title: KeyboardJS
  * Version: v0.4.1
@@ -10166,7 +10166,7 @@ return jQuery;
 	}
 });
 
-},{}],"../node_modules/lz-string/libs/lz-string.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/node_modules/lz-string/libs/lz-string.js":[function(require,module,exports){
 // Copyright (c) 2013 Pieroxy <pieroxy@pieroxy.net>
 // This work is free. You can redistribute it and/or modify it
 // under the terms of the WTFPL, Version 2
@@ -10664,7 +10664,7 @@ if( typeof module !== 'undefined' && module != null ) {
   module.exports = LZString
 }
 
-},{}],"../src/const.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/src/const.js":[function(require,module,exports){
 "use strict";
 
 var elements = require("./elements");
@@ -10678,7 +10678,7 @@ for (var i = 0; i <= 118; i++) {
 
 module.exports.MIN_ATOM_RADIUS = MIN_ATOM_RADIUS;
 module.exports.MAX_ATOM_RADIUS = MAX_ATOM_RADIUS;
-},{"./elements":"/=../src/elements.js"}],"../src/cube.js":[function(require,module,exports){
+},{"./elements":"/home/warren/Dropbox/src/atomizer/src/elements.js"}],"/home/warren/Dropbox/src/atomizer/src/cube.js":[function(require,module,exports){
 
 var n = -1;
 var p = 1;
@@ -10790,7 +10790,7 @@ module.exports = {
 	]
 
 };
-},{}],"../src/elements.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/src/elements.js":[function(require,module,exports){
 module.exports = {};
 module.exports[  0] = module.exports[ 'Xx'] = {'symbol':  'Xx', 'name':       'unknown', 'mass':   1.00000000, 'radius':  1.0000, 'color': [1.000, 0.078, 0.576], 'number': 0};
 module.exports[  1] = module.exports[  'H'] = {'symbol':   'H', 'name':      'hydrogen', 'mass':   1.00794000, 'radius':  0.3100, 'color': [1.000, 1.000, 1.000], 'number': 1};
@@ -10912,7 +10912,7 @@ module.exports[116] = module.exports['Uuh'] = {'symbol': 'Uuh', 'name':         
 module.exports[117] = module.exports['Uus'] = {'symbol': 'Uus', 'name':           'Uus', 'mass': 294.00000000, 'radius':  1.6500, 'color': [0.922, 0.000, 0.149], 'number': 117};
 module.exports[118] = module.exports['Uuo'] = {'symbol': 'Uuo', 'name':           'Uuo', 'mass': 296.00000000, 'radius':  1.5700, 'color': [0.922, 0.000, 0.149], 'number': 118};
 
-},{}],"../src/gl-matrix.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/src/gl-matrix.js":[function(require,module,exports){
 /**
  * @fileoverview gl-matrix - High performance matrix and vector operations
  * @author Brandon Jones
@@ -15229,7 +15229,7 @@ if(typeof(exports) !== 'undefined') {
   })(shim.exports);
 })(this);
 
-},{}],"../src/main.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/src/main.js":[function(require,module,exports){
 "use strict";
 
 
@@ -15713,7 +15713,7 @@ window.onload = function() {
 
 }
 
-},{"./elements":"../src/elements.js","./mimetypes":"../src/mimetypes.js","./presets":"../src/presets.js","./renderer":"../src/renderer.js","./samples":"../src/samples.js","./system":"../src/system.js","./view":"../src/view.js","./xyz":"../src/xyz.js","jquery":"../node_modules/jquery/dist/jquery.js","keyboardjs":"../node_modules/keyboardjs/keyboard.js","lz-string":"../node_modules/lz-string/libs/lz-string.js"}],"../src/mimetypes.js":[function(require,module,exports){
+},{"./elements":"/home/warren/Dropbox/src/atomizer/src/elements.js","./mimetypes":"/home/warren/Dropbox/src/atomizer/src/mimetypes.js","./presets":"/home/warren/Dropbox/src/atomizer/src/presets.js","./renderer":"/home/warren/Dropbox/src/atomizer/src/renderer.js","./samples":"/home/warren/Dropbox/src/atomizer/src/samples.js","./system":"/home/warren/Dropbox/src/atomizer/src/system.js","./view":"/home/warren/Dropbox/src/atomizer/src/view.js","./xyz":"/home/warren/Dropbox/src/atomizer/src/xyz.js","jquery":"/home/warren/Dropbox/src/atomizer/node_modules/jquery/dist/jquery.js","keyboardjs":"/home/warren/Dropbox/src/atomizer/node_modules/keyboardjs/keyboard.js","lz-string":"/home/warren/Dropbox/src/atomizer/node_modules/lz-string/libs/lz-string.js"}],"/home/warren/Dropbox/src/atomizer/src/mimetypes.js":[function(require,module,exports){
 
 "use strict";
 
@@ -15733,7 +15733,7 @@ for (var i = 0; i < formats.length; i++) {
 }
 
 
-},{}],"../src/presets.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/src/presets.js":[function(require,module,exports){
 module.exports = {
     default: {
         atomScale: 0.6,
@@ -15773,7 +15773,7 @@ module.exports = {
         bondThreshold: 1.2,
     },
 };
-},{}],"../src/renderer.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/src/renderer.js":[function(require,module,exports){
 "use strict";
 
 var glm = require('./gl-matrix');
@@ -16312,7 +16312,7 @@ function loadProgram(gl, src) {
     return new webgl.Program(gl, src[0], src[1]);
 }
 
-},{"./cube":"../src/cube.js","./elements":"../src/elements.js","./gl-matrix":"../src/gl-matrix.js","./system":"../src/system.js","./view":"../src/view.js","./webgl.js":"../src/webgl.js"}],"../src/samples.js":[function(require,module,exports){
+},{"./cube":"/home/warren/Dropbox/src/atomizer/src/cube.js","./elements":"/home/warren/Dropbox/src/atomizer/src/elements.js","./gl-matrix":"/home/warren/Dropbox/src/atomizer/src/gl-matrix.js","./system":"/home/warren/Dropbox/src/atomizer/src/system.js","./view":"/home/warren/Dropbox/src/atomizer/src/view.js","./webgl.js":"/home/warren/Dropbox/src/atomizer/src/webgl.js"}],"/home/warren/Dropbox/src/atomizer/src/samples.js":[function(require,module,exports){
 module.exports = [
     {name: "Testosterone", file: "testosterone.xyz"},
     {name: "Caffeine", file: "caffeine.xyz"},
@@ -16325,7 +16325,7 @@ module.exports = [
     {name: "Methane", file: "methane.xyz"},
 ];
 
-},{}],"../src/system.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/src/system.js":[function(require,module,exports){
 "use strict";
 
 var glm = require("./gl-matrix")
@@ -16456,7 +16456,7 @@ var getRadius = module.exports.getRadius = function(s) {
     return Math.sqrt(atom.x*atom.x + atom.y*atom.y + atom.z*atom.z) + rd;
 }
 
-},{"./const":"../src/const.js","./elements":"../src/elements.js","./gl-matrix":"../src/gl-matrix.js"}],"../src/view.js":[function(require,module,exports){
+},{"./const":"/home/warren/Dropbox/src/atomizer/src/const.js","./elements":"/home/warren/Dropbox/src/atomizer/src/elements.js","./gl-matrix":"/home/warren/Dropbox/src/atomizer/src/gl-matrix.js"}],"/home/warren/Dropbox/src/atomizer/src/view.js":[function(require,module,exports){
 "use strict";
 
 
@@ -16602,7 +16602,7 @@ var getBondRadius = module.exports.getBondRadius = function(v) {
 
 
 
-},{"./const":"../src/const.js","./elements":"../src/elements.js","./gl-matrix":"../src/gl-matrix.js"}],"../src/webgl.js":[function(require,module,exports){
+},{"./const":"/home/warren/Dropbox/src/atomizer/src/const.js","./elements":"/home/warren/Dropbox/src/atomizer/src/elements.js","./gl-matrix":"/home/warren/Dropbox/src/atomizer/src/gl-matrix.js"}],"/home/warren/Dropbox/src/atomizer/src/webgl.js":[function(require,module,exports){
 
 //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 function buildAttribs(gl, layout) {
@@ -16918,7 +16918,7 @@ function Program(gl, vertexSource, fragmentSource) {
 //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 module.exports.Program = Program;
 
-},{}],"../src/xyz.js":[function(require,module,exports){
+},{}],"/home/warren/Dropbox/src/atomizer/src/xyz.js":[function(require,module,exports){
 module.exports = function(data) {
     var lines = data.split('\n');
     var natoms = parseInt(lines[0]);
@@ -16940,4 +16940,4 @@ module.exports = function(data) {
     return trajectory;
 }
 
-},{}]},{},["../src/main.js"]);
+},{}]},{},["/home/warren/Dropbox/src/atomizer/src/main.js"]);
