@@ -16,7 +16,7 @@
                 if($('#idinputbox').val() != ""){
                     $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz', function() {
                     // When load is done
-                    if($('#idinputbox').val() != ""){
+                    if($('#xyz-data').val() != ""){
                         document.getElementById("xyz-button").click();
                     }
                 });
