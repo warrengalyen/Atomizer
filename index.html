@@ -14,7 +14,12 @@
             }
             function loadXYZ() {
                 if($('#idinputbox').val() != ""){
-                    $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz');
+                    $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz', function() {
+                    // When load is done
+                    if($('#idinputbox').val() != ""){
+                        document.getElementById("xyz-button").click();
+                    }
+                });
                 }
                 $.getJSON("https://en.wikipedia.org/w/api.php?action=parse&page=" + encodeURIComponent($('#idinputbox').val()) + "&prop=text&section=0&format=json&callback=?", function (data) {
                     for (text in data.parse.text) {
@@ -46,9 +51,6 @@
                         document.getElementById('div_text').innerHTML = pText
                     }
                 });
-            }
-            if ($('#idinputbox').val() != "") {
-                document.getElementById("xyz-button").click();
             }
             $(document).ready(function() {
                 hideSecureErrors();
