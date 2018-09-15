@@ -4,7 +4,25 @@
         <title>Atomizer</title>
         <link rel="shortcut icon" href="static/favicon.png">
         <script src="static/bundle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="static/index.css">
+        <script>
+            $(document).ready(function() {
+                $('#submitname').click(function() {
+                    if($('#idinputbox').val() != "") {
+                        $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz');
+                    }
+                });
+                $('#idinputbox').on('keydown', function (e) {
+                if (e.which == 13) {
+                    if($('#idinputbox').val() != "") {
+        	            $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz');
+	                }
+	                return false;
+                 }
+            });
+            });
+            </script>
     </head>
 
     <body>
@@ -27,7 +45,14 @@
 
                 <h2>Samples</h2>
 
+                Enter structure identifier to fetch xyz file data<br>
+
                 <select id="controls-sample"></select>
+
+                <h2>Search</h2>
+
+                <input type="text" id="idinputbox" placeholder="Structure Identifier">
+                <button id="submitname">Search</button>
 
                 <h2>Custom</h2>
 
