@@ -8,7 +8,7 @@ Atomizer is a molecule renderer with the goal of producing figures that are as a
 
 ## Try it live
 
-Try Atomizer out live in your browser here: https://www.mechanikadesign.com/webapps/atomizer/demo
+Try Atomizer out live in your browser here: https://www.mechanikadesign.com/webapps/atomizer
 
 ## Features
 
